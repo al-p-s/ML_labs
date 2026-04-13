@@ -9,7 +9,7 @@ y1 = ((df1['class'] + 1) / 2).values
 
 model = keras.Sequential([
     layers.Input(shape=(2,)),
-    layers.Dense(16, activation='relu'),
+    layers.Dense(8, activation='relu'),
     layers.Dense(8, activation='relu'),
     layers.Dense(1, activation='sigmoid')
 ])
