@@ -28,13 +28,9 @@ for file, name in files.items():
     X = df.values
     print(f"Размер данных: {X.shape}")
 
-    # Масштабирование (необязательно для DBSCAN, но для KMeans/Agglomerative важно)
     scaler = StandardScaler()
     X_scaled = scaler.fit_transform(X)
 
-    # ------------------------------------------
-    # 1. Оптимальное число кластеров (KMeans / Agglomerative)
-    # ------------------------------------------
     ks = range(2, 11)
     inertias = []
     sil_kmeans = []
@@ -202,4 +198,3 @@ df_metrics = pd.DataFrame(metrics_summary)
 print("\n" + "="*80)
 print("Сводка метрик:")
 print(df_metrics.to_string(index=False))
-df_metrics.to_csv('clustering_metrics.csv', index=False)
