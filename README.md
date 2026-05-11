@@ -3,4 +3,10 @@
 full finished
 
 ## 2 lab:
-a, b partly finished
+full finished
+
+## 3 lab:
+full finished
+
+## 4 lab:
+full finished
