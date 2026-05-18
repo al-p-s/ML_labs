@@ -6,10 +6,10 @@ full finished
 full finished
 
 ## 3 lab:
-full finished
+to be fixed...
 
 ## 4 lab:
-to be fixed...
+full finished
 
 ## 5 lab:
 full finished
