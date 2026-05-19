@@ -49,8 +49,7 @@ n_noise = np.sum(labels_best == -1)
 
 plt.figure(figsize=(7, 5))
 plt.scatter(X[:, 0], X[:, 1], c=labels_best, s=10, cmap='tab10', alpha=0.8)
-plt.title(f'DBSCAN (eps={best_eps:.2f}, min_samples={best_ms})\n'
-          f'Кластеров: {len(np.unique(labels_best[labels_best != -1]))}, шум: {n_noise} точек')
+plt.title(f'DBSCAN (eps={best_eps:.2f}, min={best_ms})\n')
 plt.xlabel('x'); plt.ylabel('y')
 plt.grid(alpha=0.3)
 plt.tight_layout()
